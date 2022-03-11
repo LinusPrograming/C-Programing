@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char cchar[2];            /*This array can hold a string of upto 2*/
+   int i;
+   printf("Enter the character: ");
+   scanf("%s",cchar);
+
+   for(i=0;i<=strlen(cchar);i++)
+   {
+    
+      if(cchar[i]>=65&&cchar[i]<=90)
+      {
+            cchar[i]=cchar[i]+32;
+            printf("\nLower Case character is: %s",cchar);
+      }
+
+      else if( cchar[i]>=97&&cchar[i]<=122)
+      {
+            cchar[i]=cchar[i]-32;
+            printf("\nUpper Case character is: %s",cchar);
+      }
+      else
+      {
+            return -1;
+      }
+   }
+
+   return 0;
+}

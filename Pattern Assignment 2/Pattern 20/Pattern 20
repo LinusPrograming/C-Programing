@@ -1,0 +1,46 @@
+            ///////////////////////////////
+           // Output : linus            //
+          //           22222           //
+         //            33333          //
+        //             44444         //
+       //              linus        //
+      ///////////////////////////////
+
+
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    int ircount1=0;
+    int iccount2=0;
+
+    int irow=0;
+    int icol=0;
+    char svalue[25];
+    int length=0;
+
+    printf("Enter a string value :");
+    scanf("%s",&svalue);
+    printf("Enter a number of rows :");
+    scanf("%d",&irow);
+
+   length=strlen(svalue);
+
+    for(ircount1=1;ircount1<=irow;ircount1++)
+    {
+        for(iccount2=0;iccount2<length;iccount2++)
+        {
+            if(ircount1==1||ircount1==irow)
+           {
+               printf("%c",svalue[iccount2]);
+           }
+           else
+           {
+               printf("%d",ircount1);
+           }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+

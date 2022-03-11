@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    int inum1=0;
+    int inum2=0;
+    printf("Enter a number :");
+    scanf("%d",&inum1);
+    printf("Enter a number :");
+    scanf("%d",&inum2);
+
+    EqualNum(inum1,inum2);
+
+    return 0;
+}
+EqualNum(int ino1,int ino2)
+{
+     if(ino1==ino2)
+    {
+        printf("Equal");
+    }
+    else
+    {
+        printf("Not Equal");
+    }
+}

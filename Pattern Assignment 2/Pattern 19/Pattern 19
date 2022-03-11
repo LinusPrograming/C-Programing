@@ -1,0 +1,38 @@
+            ///////////////////////////////
+           // Output : linus            //
+          //           linus           //
+         //            linus          //
+        //             linus         //
+       //              linus        //
+      ///////////////////////////////
+
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int ircount1=0;
+    int iccount2=0;
+
+    int irow=0;
+    int icol=0;
+    char svalue[25];
+    int length=0;
+
+
+    printf("Enter a string value :");
+    scanf("%s",&svalue);
+
+    length=strlen(svalue);
+
+    for(ircount1=0;ircount1<length;ircount1++)
+    {
+        for(iccount2=0;iccount2<length;iccount2++)
+        {
+           printf("%c",svalue[iccount2]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+

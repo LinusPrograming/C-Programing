@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int ivalue=0;
+
+    printf("Enter a number of kilometers :");
+    scanf("%d",&ivalue);
+
+    KiloMeters(ivalue);
+
+    return 0;
+}
+void KiloMeters(int fivalue)
+{
+    int irent=0;
+    int ical=0;
+    int inum=100;
+
+    if(fivalue<=100)
+    {
+        irent=fivalue*25;
+        printf("%d",irent);
+    }
+    if(fivalue>100)
+    {
+        ical=fivalue-inum;
+
+        ical=ical*15;
+
+        inum=inum*25;
+
+        irent=ical+inum;
+
+        printf("%d",irent);
+    }
+}

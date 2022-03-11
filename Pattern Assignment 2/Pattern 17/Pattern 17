@@ -1,0 +1,34 @@
+            ///////////////////////////////
+           // Output : L                //
+          //           L I             //
+         //            L I N          //
+        //             L I N U       //
+       //              L I N U S    //
+      ///////////////////////////////
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int ircount1=0;
+    int iccount2=0;
+
+    char svalue[25];
+    int length=0;
+
+    printf("Enter a string value :");
+    scanf("%s",&svalue);
+
+    length=strlen(svalue);
+
+    for(ircount1=0;ircount1<length;ircount1++)
+    {
+        for(iccount2=0;iccount2<=ircount1;iccount2++)
+        {
+           printf("%c",svalue[iccount2]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+

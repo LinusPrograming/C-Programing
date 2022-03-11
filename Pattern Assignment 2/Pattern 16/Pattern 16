@@ -1,0 +1,37 @@
+            ///////////////////////////////
+           // Output : 11111            //
+          //           33333           //
+         //            55555          //
+        //             77777         //
+       //              99999        //
+      ///////////////////////////////
+
+#include <stdio.h>
+int main()
+{
+    int ircount1=0;
+    int iccount2=0;
+    int num=0;
+
+    int irow=0;
+    int icol=0;
+
+    printf("Enter a number of rows :");
+    scanf("%d",&irow);
+    printf("Enter a number of col :");
+    scanf("%d",&icol);
+
+    for(ircount1=1;ircount1<=irow;ircount1++)
+    {
+        num=(ircount1*2)-1;
+        for(iccount2=1;iccount2<=icol;iccount2++)
+        {
+            
+                printf("%d",num);
+            
+        }
+        printf("\n");
+    }
+    return 0;
+}
+

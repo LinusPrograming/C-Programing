@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    char cchar='\0';
+
+    printf("Enter an alphabet: ");
+    scanf("%c", &cchar);
+
+    vowel(cchar);
+
+    return 0;
+}
+void vowel(char cvalue)
+{
+    char lowercase_vowel, uppercase_vowel;
+
+    lowercase_vowel = (cvalue == 'a' || cvalue == 'e' || cvalue == 'i' || cvalue == 'o' || cvalue == 'u');
+
+    uppercase_vowel = (cvalue == 'A' || cvalue == 'E' || cvalue == 'I' || cvalue == 'O' || cvalue == 'U');
+
+    if (lowercase_vowel || uppercase_vowel)
+    {
+        printf("TRUE", cvalue);
+    }
+    else
+    {
+        printf("FALSE", cvalue);
+    }
+}
+

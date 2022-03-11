@@ -1,0 +1,46 @@
+            //////////////////////////////
+           // Output : * * * 4 5       //
+          //           * * * 4 5      //
+         //            * * * 4 5     //
+        //             * * * 4 5    //
+       //              * * * 4 5   //
+      //////////////////////////////
+
+
+#include <stdio.h>
+int main()
+{
+    int row=0;
+    int col=0;
+
+    printf("Enter a number of rows :");
+    scanf("%d",&row);
+    printf("Enter a number of col :");
+    scanf("%d",&col);
+
+    pattern(row,col);
+
+    return 0;
+}
+int pattern(int irow,int icol)
+{
+    int inum1=0;
+    int inum2=0;
+
+    for(inum1=1;inum1<=irow;inum1++)
+    {
+        for(inum2=1;inum2<=icol;inum2++)
+        {
+            if(inum2==icol-1||inum2==icol)
+            {
+                printf("%d",inum2);
+            }
+            else
+            {
+                printf("*");
+            }
+        }
+
+        printf("\n");
+    }
+}

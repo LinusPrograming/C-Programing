@@ -1,0 +1,41 @@
+            ///////////////////////////////
+           // Output : = = = = =        //
+          //           =       =       //
+         //            =       =      //
+        //             =       =     //
+       //              = = = = =    //
+      ///////////////////////////////
+
+#include <stdio.h>
+int main()
+{
+    int ircount1=0;
+    int iccount2=0;
+
+    int irow=0;
+    int icol=0;
+
+    printf("Enter a number of rows :");
+    scanf("%d",&irow);
+    printf("Enter a number of col :");
+    scanf("%d",&icol);
+
+    for(ircount1=1;ircount1<=irow;ircount1++)
+    {
+        for(iccount2=1;iccount2<=icol;iccount2++)
+        {
+            if(ircount1==1||ircount1==irow|| iccount2==1 ||iccount2==icol)
+            {
+                printf("=");
+            }
+            else
+            {
+                printf(" ");
+            }
+
+        }
+            printf("\n");
+    }
+    return 0;
+}
+

@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int inum1=0;
+
+    int ivalue=0;
+    printf("Enter a Range :\n");
+    scanf("%d",&ivalue);
+
+    for(inum1=1;inum1<=ivalue;inum1++)
+      {
+        if(inum1%2==0)
+        printf("%d\n",inum1);
+      }
+    return 0;
+}

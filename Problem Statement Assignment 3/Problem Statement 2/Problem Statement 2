@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int main()
+{
+    int iprice=0;
+
+    printf("Enter a price :");
+    scanf("%d",&iprice);
+
+    incometax(iprice);
+    return 0;
+}
+int incometax(int iamount)
+{
+    int price = iamount;
+    int tax=0;
+    if(iamount<500000)
+    {
+        printf("Tax on your amount is %d",tax);
+    }
+    else if(iamount>=500000 && iamount<1000000)
+    {
+        tax = (iamount-500000)*10/100;
+    }
+    else if(iamount>=1000000&&iamount<=2000000)
+    {
+        price=iamount-500000;
+
+        tax= 500000*10/100;
+
+        price=price-500000;
+
+        tax+=price*20/100;
+
+    }
+    else
+    {
+        price=iamount-500000;
+
+        tax= 500000*10/100;
+
+        price=price-1000000;
+
+        tax+=1000000*20/100;
+        
+        tax+=price*30/100;
+    }
+    
+    printf("Tax on your amount is %d",tax);
+}

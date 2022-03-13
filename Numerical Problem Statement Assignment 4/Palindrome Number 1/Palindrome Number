@@ -1,0 +1,37 @@
+#include <stdio.h>'
+
+int main()
+{
+
+    int originalnum=0;
+
+    printf("Enter a number :");
+    scanf("%d",&originalnum);
+
+    checkpalindrome(originalnum);
+}
+    int checkpalindrome(int inum)
+    {
+        int result=0;
+        int reminder=0;
+        int inum1=0;
+        inum1=inum;
+
+    while (inum!=0)
+    {
+        reminder=inum%10;
+
+        result=result*10+reminder;
+
+        inum/=10;
+    }
+    if(result==inum1)
+    {
+        printf("%d it is a palindrome number",inum1);
+    }
+    else
+    {
+        printf("%d it is not a palindrome number",inum1);
+    }
+    return 0;
+}

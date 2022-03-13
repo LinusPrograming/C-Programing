@@ -1,0 +1,42 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int irow=0;
+
+    int inum1=0;
+    int inum2=0;
+    int ispace=0;
+    int ismin=0;
+
+    printf("Enter number of rows :");
+    scanf("%d",&irow);
+
+    ismin=irow;
+
+    for(inum1=1;inum1<=irow;inum1++)
+    {
+        for(ispace=1;ispace<=ismin*2-1;ispace++)
+        {
+            printf(" ");
+        }
+        for(inum2=1;inum2<=inum1*2-1;inum2++)
+        {
+            if(inum2==1||inum2==inum1*2-1)
+            {
+                printf("$ ");
+            }
+            else
+            {
+                printf("* ");
+            }
+        }
+         printf("\n");
+        ismin--;
+
+    }
+
+    return 0;
+}

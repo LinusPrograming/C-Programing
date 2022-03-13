@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+   int iprice=0;
+
+   printf("Enter a price :");
+   scanf("%d",&iprice);
+
+   calculateBill(iprice);
+    return 0;
+}
+int calculateBill(int iamount)
+{
+    int Discount=0;
+    if(iamount<=500)
+    {
+        printf("%d",iamount);
+    }
+    else if(iamount>500&&iamount<=1500)
+    {
+      Discount=iamount*10/100;
+      Discount=iamount-Discount;
+      printf("%d",Discount);
+    }
+    else
+    {
+        Discount=iamount*15/100;
+        Discount=iamount-Discount;
+        printf("%d",Discount);
+    }
+}

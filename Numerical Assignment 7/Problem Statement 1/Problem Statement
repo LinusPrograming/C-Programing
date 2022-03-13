@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int ivalue=0;
+    int iret=0;
+
+    printf("Enter a Number");
+    scanf("%d",&ivalue);
+    if(ivalue<0)
+    {
+        ivalue=-ivalue;
+    }
+
+    iret=counteven(ivalue);
+
+    printf("%d",iret);
+    return 0;
+}
+int counteven(int ino)
+{
+    int inum=0;
+    int count=0;
+
+    while(ino!=0)
+    {
+        inum=ino%10;
+        ino/=10;
+
+        if(inum%2==0)
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+

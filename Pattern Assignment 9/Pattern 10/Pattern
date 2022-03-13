@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int irow=0;
+    int inum=0;
+    int inum2=0;
+
+    printf("enter a number of rows :");
+    scanf("%d",&irow);
+
+    repeat:
+    inum2++;
+
+    for(inum=1;inum<=irow;inum++)
+    {
+        printf("*");
+    }
+
+    printf("\n");
+
+    if(inum2<irow)
+    {
+        goto repeat;
+    }
+}

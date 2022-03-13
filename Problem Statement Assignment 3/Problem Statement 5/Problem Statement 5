@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int istart=0;
+    int iend=0;
+    int isum=0;
+
+    printf("Enter start and end number :");
+    scanf("%d%d",&istart,&iend);
+
+    if(istart<=iend)
+    {
+      while(istart<=iend)
+        {
+            if(istart%2==0)
+            {
+                isum= isum+istart;
+            }
+            istart++;
+        }
+        printf("%d",isum);
+    }
+    else
+    {
+        printf("invalid number");
+    }
+    return 0;
+}
+

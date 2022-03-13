@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int ivalue=0;
+    int iret=0;
+
+    printf("Enter a Number : ");
+    scanf("%d",&ivalue);
+
+    iret =counttwo(ivalue);
+    printf("%d",iret);
+
+    return 0;
+}
+int counttwo(int ino)
+{
+    int reminder=0;
+    int count=0;
+
+    while(ino!=0)
+    {
+        reminder=ino%10;
+        ino/=10;
+        if(reminder==2)
+        {
+            count++;
+        }
+    }
+    return count;
+}

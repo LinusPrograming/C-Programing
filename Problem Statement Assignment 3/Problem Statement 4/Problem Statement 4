@@ -1,0 +1,23 @@
+#include <stdio.h>
+int DollarToINR(int ino)
+{
+   int Dollar=0;
+
+   Dollar=ino*70;
+
+   return Dollar;
+}
+int main()
+{
+    int ivalue=0;
+    int iret=0;
+
+    printf("Enter number of USD :");
+    scanf("%d",&ivalue);
+
+    iret=DollarToINR(ivalue);
+
+    printf("Value of INR is %d",iret);
+
+    return 0;
+}

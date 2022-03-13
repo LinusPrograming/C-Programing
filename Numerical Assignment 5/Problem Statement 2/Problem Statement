@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+   int ivalue1=0,ivalue2=0;
+
+   printf("Enter starting point :");
+   scanf("%d",&ivalue1);
+
+   printf("Enter a ending point :");
+   scanf("%d",&ivalue2);
+
+   rangedisplayeven(ivalue1,ivalue2);
+
+    return 0;
+}
+void rangedisplayeven(int istart,int iend)
+{
+    int inum=0;
+
+    for(inum=istart;inum<=iend;inum++)
+    {
+        if(inum%2==0)
+        {
+            printf("%d  ",inum);
+        }
+    }
+    if(istart>iend)
+    {
+         printf("invalid number");
+    }
+
+}

@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{
+    int ivalue1=0;
+    int ivalue2=0;
+
+    printf("Enter number of rows :-");
+    scanf("%d",&ivalue1);
+
+    printf("Enter number of coloums :-");
+    scanf("%d",&ivalue2);
+
+    pattern(ivalue1,ivalue2);
+
+    return 0;
+}
+void pattern(int irow,int icol)
+{
+    int inum1=0;
+    int inum2=0;
+
+    for(inum1=1;inum1<=irow;inum1++)
+    {
+        for(inum2=1;inum2<=icol;inum2++)
+        {
+            if(inum1==1 || inum1==irow ||inum2==1||inum2==icol)
+
+            {
+                printf("*");
+            }
+            else
+            {
+                printf("@");
+            }
+
+        }
+        printf("\n");
+    }
+}

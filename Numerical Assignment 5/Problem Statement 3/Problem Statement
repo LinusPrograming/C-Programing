@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int Sumrange(int istart,int iend)
+{
+    int inum=0;
+    int isum=0;
+
+    for(inum=istart;inum<=iend;inum++)
+    {
+        isum=isum+inum;
+    }
+
+    if(istart>iend)
+    {
+       `printf("invalid number");
+    }
+    return isum;
+
+}
+int main()
+{
+    int ivalue1=0,ivalue2=0,iret=0;
+
+    printf("Enter starting point :");
+    scanf("%d",&ivalue1);
+
+    printf("Enter a ending point :");
+    scanf("%d",&ivalue2);
+
+    iret=Sumrange(ivalue1,ivalue2);
+    if(ivalue1<=ivalue2)
+    {
+        printf("Addition is %d",iret);
+    }
+    return 0;
+}
+

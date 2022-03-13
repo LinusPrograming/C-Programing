@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    int ivalue1=0;
+    int ivalue2=0;
+
+    int irow=0;
+
+    printf("Enter a number of rows :");
+    scanf("%d",&irow);
+
+    for(ivalue1=1;ivalue1<=irow;ivalue1++)
+    {
+        for(ivalue2=1;ivalue2<=irow*2;ivalue2++)
+        {
+            if(ivalue1==irow&&ivalue2==2||ivalue1==irow&&ivalue2==irow*2-1)
+            {
+                printf("@ ");
+            }
+            else
+            {
+                printf("* ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}

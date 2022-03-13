@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+    int inum=0;
+    int iR=0;
+    int isum=0;
+    int isno=0;
+    int ieno=0;
+    int inum1=0;
+
+    printf("Enter a stating number :");
+    scanf("%d",&isno);
+
+    printf("Enter a ending number :");
+    scanf("%d",&ieno);
+
+    printf("Armstrong number is ");
+
+    for(inum=isno;inum<=ieno;inum++)
+    {
+        inum1=inum;
+        isum=0;
+
+        while(inum1!=0)
+        {
+            iR=inum1%10;
+
+            inum1=inum1/10;
+
+            isum=isum+iR*iR*iR;
+        }
+        if(isum==inum)
+        {
+            printf("%d\t",inum);
+        }
+    }
+}

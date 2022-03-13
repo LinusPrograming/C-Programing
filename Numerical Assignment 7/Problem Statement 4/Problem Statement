@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int ivalue=0;
+    int iret=0;
+
+    printf("Enter a Number");
+    scanf("%d",&ivalue);
+    if(ivalue<0)
+    {
+        ivalue=-ivalue;
+    }
+
+    iret=multidigit(ivalue);
+
+    printf("%d",iret);
+    return 0;
+}
+int multidigit(int ino)
+{
+    int inum=0;
+    int imulti=1;
+
+    while(ino!=0)
+    {
+        inum=ino%10;
+        ino/=10;
+        imulti=imulti*inum;
+
+    }
+    return imulti ;
+}

@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+   int istd=0;
+
+   printf("Enter a standard :");
+   scanf("%d",&istd);
+
+   schoolfees(istd);
+    return 0;
+}
+int schoolfees(int istandard)
+{
+    int std1=8900;
+    int std2=12790;
+    int std3=21000;
+    int std4=23450;
+
+    if(istandard==1)
+     {
+        printf("%d",std1);
+    }
+    else if(istandard==2)
+    {
+
+      printf("%d",std2);
+    }
+    else if(istandard==3)
+    {
+        printf("%d",std3);
+    }
+    else if(istandard==4)
+    {
+        printf("%d",std4);
+    }
+    else
+    {
+        printf("Wrong input");
+    }
+
+}

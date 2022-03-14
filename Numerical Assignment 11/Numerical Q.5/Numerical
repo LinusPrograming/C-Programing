@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+    int ino=0;
+
+    printf("Enter a number of elements :");
+    scanf("%d",&ino);
+
+    multipleof11(ino);
+
+    return 0;
+}
+int multipleof11(int N)
+{
+    int ivalue1=0;
+    int inum[100];
+    int ieven=0;
+    int iodd=0;
+    int isum=0;
+
+printf("Enter %d elements :",N);
+
+    for(ivalue1=1;ivalue1<=N;ivalue1++)
+    {
+        scanf("%d",&inum[ivalue1]);
+    }
+
+     printf("Elements that are multiple of 11 is :");
+
+    for(ivalue1=1;ivalue1<=N;ivalue1++)
+    {
+        if(inum[ivalue1]%11==0)
+        {
+           printf("%d ",inum[ivalue1]);
+        }
+    }
+}

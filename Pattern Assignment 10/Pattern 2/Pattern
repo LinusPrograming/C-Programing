@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main()
+{
+    int irow=0;
+    int icol=0;
+
+    printf("Enter a number of rows :");
+    scanf("%d",&irow);
+    printf("Enter a number of col :");
+    scanf("%d",&icol);
+
+    DisplayPattern(irow,icol);
+    return 0;
+}
+int DisplayPattern(int ivalue1,int ivalue2)
+{
+    int ircount=0;
+    int iccount=0;
+    int inum=2;
+    int istore=0;
+
+    for(ircount=1;ircount<=ivalue1;ircount++)
+    {
+        for(iccount=1;iccount<=ivalue2;iccount++)
+        {
+            if(ircount==2)
+            {
+               istore=(iccount*inum)-1;
+            printf("%d\t",istore);
+
+            }
+            else
+            {
+                istore=iccount*inum;
+                printf("%d\t",istore);
+            }
+        }
+        printf("\n");
+    }
+}

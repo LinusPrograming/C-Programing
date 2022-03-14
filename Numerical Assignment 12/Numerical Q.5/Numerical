@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main()
+{
+    int iSno=0;
+    int iEno=0;
+
+    printf("Enter a starting number :");
+    scanf("%d",&iSno);
+
+    printf("Enter a ending number :");
+    scanf("%d",&iEno);
+
+    ThirdElement(iSno,iEno);
+
+    return 0;
+}
+int ThirdElement(int iSnum,int iEnum)
+{
+    int ivalue1=0;
+    int isum=1;
+    int icount=0;
+    int inum=0;
+    inum==iSnum;
+
+    for(ivalue1=inum;ivalue1<=iEnum;ivalue1++)
+    {
+        if(ivalue1%iSnum==0&&ivalue1>0)
+        {
+            printf("%d",ivalue1);
+        }
+    }
+
+}

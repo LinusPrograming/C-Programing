@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+    int iSno=0;
+    int iEno=0;
+
+    printf("Enter a starting number :");
+    scanf("%d",&iSno);
+
+    printf("Enter a ending number :");
+    scanf("%d",&iEno);
+
+    SecondLastNum(iSno,iEno);
+
+    return 0;
+}
+int SecondLastNum(int iSnum,int iEnum)
+{
+    int ivalue1=0;
+    int isum=1;
+    int icount=0;
+
+    for(ivalue1=iSnum;ivalue1<=iEnum;ivalue1++)
+    {
+        if(ivalue1==iEnum-1)
+        {
+            printf("%d",ivalue1);
+        }
+    }
+
+}
+
+
+
+

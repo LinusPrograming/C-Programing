@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+int main()
+{
+    int iNum=0;
+
+    printf("Enter a number of elements :");
+    scanf("%d",& iNum);
+
+    Digitcount(iNum);
+
+    return 0;
+}
+
+
+int Digitcount(int N)
+{
+
+    int iCount = 0;
+    int iArr[10];
+    int iCounter = 0;
+    int iDisplayElement = 0;
+
+    int finalCount = 0;                 //Working
+
+    printf("Enter %d elements :",N);
+    for(iCount = 0; iCount < N; iCount++)
+    {
+        scanf("%d",&iArr[iCount]);
+    }
+
+    for(iCount = 0; iCount < N; iCount++)
+    {
+        iCounter = 0;
+
+        iDisplayElement = iArr[iCount];
+
+        while(iDisplayElement!=0)
+        {
+            iDisplayElement/=10;
+            iCounter++;
+        }
+        if(iCounter == 3)
+        {
+            
+             printf("%d\t",iArr[iCount]);
+
+             finalCount++;
+        }
+            iDisplayElement = 0;
+
+
+    }
+                            printf("\nThere are %d Three digit Numbers.....",finalCount);
+
+
+}

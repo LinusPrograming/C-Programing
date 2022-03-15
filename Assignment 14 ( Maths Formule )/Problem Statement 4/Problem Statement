@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+void AreaOfCircle(int);
+
+int main()
+{
+    int Fahrenheit;
+    
+    printf("Enter a temperature in Fahrenheit:-");
+    scanf(" %d",&Fahrenheit);
+
+    AreaOfCircle(Fahrenheit);
+
+    return 0;
+}
+void AreaOfCircle(int Fvalue)
+{
+    float Celsius;
+    
+    Celsius = Fvalue-32;
+    Celsius = Celsius*5/9;
+
+    printf("Temperature in Celsius : %f",Celsius);
+}

@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+void AreaOfCircle(float,float);
+
+int main()
+{
+    float Width;
+    float Height;
+    
+    printf("Enter a Width of rectangle :-");
+    scanf(" %f",&Width);
+
+    printf("Enter a Height of rectangle :-");
+    scanf(" %f",&Height);
+
+    AreaOfCircle(Width,Height);
+
+    return 0;
+}
+void AreaOfCircle(float W,float H)
+{
+    float Area;
+
+    Area = (W*H);
+
+    printf("Area of Rectangle is : %f",Area);
+}

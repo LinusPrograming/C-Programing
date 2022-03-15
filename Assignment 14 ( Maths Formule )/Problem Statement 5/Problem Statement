@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+void AreaOfCircle(int);
+
+int main()
+{
+    int squarefeet;
+    
+    printf("Enter area in square feet:-");
+    scanf(" %d",&squarefeet);
+
+    AreaOfCircle(squarefeet);
+
+    return 0;
+}
+void AreaOfCircle(int Fvalue)
+{
+    float Meter;
+    
+    Meter=Fvalue*0.0929;
+
+    printf("Area in square meter : %f",Meter);
+}

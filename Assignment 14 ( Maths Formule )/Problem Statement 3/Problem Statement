@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+void AreaOfCircle(float);
+
+int main()
+{
+    float Kilometer;
+    
+    printf("Enter a Distance in Kilometer :-");
+    scanf(" %f",&Kilometer);
+
+    AreaOfCircle(Kilometer);
+
+    return 0;
+}
+void AreaOfCircle(float K)
+{
+    float Meter;
+
+    Meter = K*1000;
+
+    printf("Distance in Meter is : %f",Meter);
+}

@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+void AreaOfCircle(float);
+
+int main()
+{
+    float Radius;
+    
+    printf("Enter a radius of circle :-");
+    scanf(" %f",&Radius);
+
+    AreaOfCircle(Radius);
+
+    return 0;
+}
+void AreaOfCircle(float R)
+{
+    float Pi = 3.14;
+    float Area;
+
+    Area = Pi*(R*R);
+
+    printf("Area of circle is : %f",Area);
+}
